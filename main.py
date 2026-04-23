@@ -4,7 +4,7 @@ from parse_script import func_parse
 from handler_list import Handler
 
 
-def run(file) -> dict:  # читает файл и возвращает список данных
+def run(file) -> list:  # читает файл и возвращает список данных
     my_list_prod: list = []
 
     for f in file:
@@ -24,6 +24,7 @@ def main():
         print_result = "Нет нужных файлов"
     finally:
         print(print_result)
+        print(type(class_handler.func_report()))
 
 
 if __name__ == "__main__":
